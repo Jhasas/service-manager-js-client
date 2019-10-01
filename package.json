@@ -1,0 +1,43 @@
+{
+  "name": "@crossworth/service-manager",
+  "license": "MIT",
+  "version": "0.1.0",
+  "description": "A client for a simple service manager",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "lint": "eslint src __tests__ --fix; exit 0",
+    "test": "jest --verbose",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crossworth/service-manager-js-client.git"
+  },
+  "keywords": [
+    "service manager"
+  ],
+  "author": "Pedro Henrique <system.pedrohenrique@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/crossworth/service-manager-js-client/issues"
+  },
+  "homepage": "https://github.com/crossworth/service-manager-js-client",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "eslint": "6.1.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-config-spatie": "^1.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
+    "nock": "^11.3.5"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "internal-ip": "^4.3.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "10.6"
+      },
+      "modules": "umd"
+    }]
+  ]
+}
